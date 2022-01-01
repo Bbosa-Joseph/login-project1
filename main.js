@@ -35,17 +35,17 @@ let username = id("username"),
                 successIcon[serial].style.opacity = "1"
             }
         }
-     var btn = document.getElementById("btn"),
-        text = document.getElementById("text");
-    btn.addEventListener("click", function () {
-        sendMessage(text.value);
-        text.value = "";
-    });
+    //  var btn = document.getElementById("btn"),
+    //     text = document.getElementById("text");
+    // btn.addEventListener("click", function () {
+    //     sendMessage(text.value);
+    //     text.value = "";
+    // });
 
-    function sendMessage(message) {
-        if (!message ||!message.length) return;
-        childWindow.postMessage(JSON.stringify({
-            message: message,
-            time:new Date()
-        }), 'http://receiver.com');
-    }
+    // function sendMessage(message) {
+    //     if (!message ||!message.length) return;
+    //     childWindow.postMessage(JSON.stringify({
+    //         message: message,
+    //         time:new Date()
+    //     }), 'http://receiver.com');
+    // }
